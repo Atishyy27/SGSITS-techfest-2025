@@ -1,4 +1,4 @@
-export const generalRegistrationLink = "http://googleusercontent.com/forms.google.com/13"; // You will replace this with your GForm link
+export const generalRegistrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSdsRU3GvP8jq0EW6QJDyRUVOOg5gWQeWc5UqQ_rNOFy7VXMdQ/viewform"; // You will replace this with your GForm link
 
 export const organizers = [
   { name: "SGSITS Logo 1", logo: "/logos/image1.png" },
@@ -119,37 +119,37 @@ export const eventTracks = [
   { 
     id: 1, 
     name: "Prototype Competition", 
-    image: "/assets/track1.png", 
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track1_acpfxi.png", 
     link: "/prarupam" 
   },
   { 
     id: 2, 
     name: "Industry Expo", 
-    image: "/assets/track2.png", 
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track2_eapi3s.png", 
     link: "/expo" 
   },
   { 
     id: 3, 
     name: "Invited Talks", 
-    image: "/assets/track3.png", 
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track3_x4omsh.png", 
     link: "/events" 
   },
   { 
     id: 4, 
     name: "Student Conference", 
-    image: "/assets/track4.png", 
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track4_lpo0s2.png", 
     link: "/events" 
   },
   { 
     id: 5, 
     name: "Roborace & Exciting Games", 
-    image: "/assets/track5.png", 
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track5_fkvnni.png", 
     link: "/events" 
   },
   { 
     id: 6, 
     name: "Cultural Events", 
-    image: "/assets/track6.png", 
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747636/track6_moaljb.png", 
     link: "/events" 
   },
 ];
