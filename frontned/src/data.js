@@ -116,24 +116,48 @@ export const departmentalEvents = [
 ];
 
 export const eventTracks = [
-  { name: "Prototype Competition", image: "http://googleusercontent.com/images.google.com/31" },
-  { name: "Industry Expo", image: "http://googleusercontent.com/images.google.com/32" },
-  { name: "Invited Talks", image: "http://googleusercontent.com/images.google.com/33" },
-  { name: "Student Conference", image: "http://googleusercontent.com/images.google.com/27" },
-  { name: "Roborace & Exciting Games", image: "http://googleusercontent.com/images.google.com/28" },
-  { name: "Cultural Events", image: "http://googleusercontent.com/images.google.com/29" },
+  { 
+    id: 1, 
+    name: "Prototype Competition", 
+    image: "/assets/track1.png", 
+    link: "/prarupam" 
+  },
+  { 
+    id: 2, 
+    name: "Industry Expo", 
+    image: "/assets/track2.png", 
+    link: "/expo" 
+  },
+  { 
+    id: 3, 
+    name: "Invited Talks", 
+    image: "/assets/track3.png", 
+    link: "/events" 
+  },
+  { 
+    id: 4, 
+    name: "Student Conference", 
+    image: "/assets/track4.png", 
+    link: "/events" 
+  },
+  { 
+    id: 5, 
+    name: "Roborace & Exciting Games", 
+    image: "/assets/track5.png", 
+    link: "/events" 
+  },
+  { 
+    id: 6, 
+    name: "Cultural Events", 
+    image: "/assets/track6.png", 
+    link: "/events" 
+  },
 ];
-
 // NEW: A dedicated array for the gallery page with real images
 export const galleryImages = [
-  "http://googleusercontent.com/images.google.com/34",
-  "http://googleusercontent.com/images.google.com/35",
-  "http://googleusercontent.com/images.google.com/36",
-  "http://googleusercontent.com/images.google.com/37",
-  // "http://googleusercontent.com/images.google.com/38",
-  // "http://googleusercontent.com/images.google.com/39",
-  // "http://googleusercontent.com/images.google.com/40",
-  // "http://googleusercontent.com/images.google.com/41",
+  "https://res.cloudinary.com/df4fnnohe/image/upload/v1757742983/WhatsApp_Image_2025-09-08_at_18.38.04_18f9642e_qidgyv.jpg",
+  "https://res.cloudinary.com/df4fnnohe/image/upload/v1757742976/WhatsApp_Image_2025-09-08_at_18.38.03_e5284848_nklmzf.jpg",
+  // "http://googleusercontent.com/images.google.com/36",
 ];
 
 export const teamData = {

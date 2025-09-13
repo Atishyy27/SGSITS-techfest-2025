@@ -8,26 +8,35 @@ import OrganizersMarquee from '../components/OrganizersMarquee.jsx';
 import CustomCursor from '../components/CustomCursor.jsx';
 import { translations, eventTracks } from '../data.js';
 
-const TrackCard = ({ track, index }) => (
-  // FIX: Wrapped the entire card in a Link to make it all clickable
-  <Link to={track.link || "/"}>
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ delay: index * 0.1 }}
-      className="relative rounded-lg overflow-hidden group shadow-lg h-full"
-    >
-      <img src={track.image} alt={track.name} className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:bg-black/80 transition-all flex items-end p-6">
-        <h3 className="text-2xl font-bold text-white transform transition-transform duration-300 group-hover:-translate-y-2">{track.name}</h3>
-      </div>
-    </motion.div>
-  </Link>
-);
+// FIX: This component has been completely redesigned to match your poster
+const TrackCard = ({ track, index }) => {
+  return (
+    <Link to={track.link || "/"}>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ delay: index * 0.1 }}
+        className="relative rounded-2xl overflow-hidden group shadow-lg h-64 md:h-80"
+      >
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+          style={{ backgroundImage: `url(${track.image})` }} 
+        />
+        
+        {/* Glassmorphism Overlay */}
+        <div className="absolute inset-x-4 bottom-4 bg-black/30 backdrop-blur-md rounded-xl p-4 flex items-center gap-4 border border-white/10">
+          <span className="text-5xl font-bold text-white/50">{track.id}</span>
+          <h3 className="text-xl font-bold text-white">{track.name}</h3>
+        </div>
+      </motion.div>
+    </Link>
+  );
+};
 
-export default function HomePage({ lang }) { // FIX: Accept lang as a prop
-  const t = translations[lang] || translations['en']; // Use the lang prop for translations
+export default function HomePage({ lang }) {
+  const t = translations[lang] || translations['en'];
 
   return (
     <>
