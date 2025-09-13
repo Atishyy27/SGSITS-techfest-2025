@@ -130,10 +130,10 @@ export const galleryImages = [
   "http://googleusercontent.com/images.google.com/35",
   "http://googleusercontent.com/images.google.com/36",
   "http://googleusercontent.com/images.google.com/37",
-  "http://googleusercontent.com/images.google.com/38",
-  "http://googleusercontent.com/images.google.com/39",
-  "http://googleusercontent.com/images.google.com/40",
-  "http://googleusercontent.com/images.google.com/41",
+  // "http://googleusercontent.com/images.google.com/38",
+  // "http://googleusercontent.com/images.google.com/39",
+  // "http://googleusercontent.com/images.google.com/40",
+  // "http://googleusercontent.com/images.google.com/41",
 ];
 
 export const teamData = {
@@ -163,7 +163,6 @@ export const teamData = {
     { name: "Prof. Tarun Kumar Narnaure", role: "Member", avatar: "https://media.licdn.com/dms/image/v2/D4D03AQFtaazmNhHcNg/profile-displayphoto-shrink_800_800/B4DZN3vfFJG0Ac-/0/1732880765338?e=1760572800&v=beta&t=gDIkszRCahmp7a5JEL5pV-9ezEMcDnXTPR0lmMq5aAE" },
     { name: "Prof. Gangaram Mourya", role: "Member", avatar: "" },
     { name: "Prof. Kumar Rohit", role: "Member", avatar: "https://media.licdn.com/dms/image/v2/D5603AQFFI1G7KYuYIg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720508849059?e=1760572800&v=beta&t=v89iwSeWihKVqe69SAntChUvSXlLl48H94YlcJF88UE" },
-    // { name: "Prof. Amit Soni", role: "Member", avatar: "https://media.licdn.com/dms/image/v2/C5103AQHtEgvGX-2l3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1532077856440?e=1760572800&v=beta&t=hZ6BB5G7APfAlR006bHrWbmsTqdDQOU-ESJ3GoPFlhY" },
     { name: "Prof. Adarsh Jaiswal", role: "Member", avatar: "https://media.licdn.com/dms/image/v2/D4D03AQEqAobwLkXlqg/profile-displayphoto-shrink_200_200/B4DZSsNrcSHIAY-/0/1738056056186?e=1760572800&v=beta&t=Ar25dXYL-Q71Q-zOGre3kUeX2mziwNxDLqlxi3r8LQE" },
   ],
   "Expo Team": [

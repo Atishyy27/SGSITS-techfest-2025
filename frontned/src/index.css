@@ -6,34 +6,50 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Inter', sans-serif;
   /* NEW: Professional, textured background */
   @apply bg-[#0D1117] text-gray-300;
-  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
   background-size: 20px 20px;
 }
 
 /* Custom Scrollbar to match the new theme */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #0D1117; }
-::-webkit-scrollbar-thumb { background: #22d3ee; border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22d3ee;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
 
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
   @apply dark:bg-gray-800;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
   @apply dark:bg-gray-600;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
   @apply dark:bg-gray-500;
@@ -43,6 +59,7 @@ body {
 #nprogress {
   pointer-events: none;
 }
+
 #nprogress .bar {
   background: #06b6d4;
   position: fixed;
