@@ -17,7 +17,7 @@ export const translations = {
     subtitle: "SGSITS's Inaugural TechFest",
     heroDesc: "The ultimate convergence of technology, innovation, and talent at SGSITS, Indore.",
     home: "Home",
-    Prarupam: "Prarupam",
+    prarupam: "Prarupam",
     events: "Events",
     expo: "Expo",
     gallery: "Gallery",
@@ -36,7 +36,7 @@ export const translations = {
     subtitle: "SGSITS का पहला टेकफेस्ट",
     heroDesc: "SGSITS, इंदौर में प्रौद्योगिकी, नवाचार और प्रतिभा का संगम।",
     home: "होम",
-    Prarupam: "प्रारूपम",
+    prarupam: "प्रारूपम",
     events: "इवेंट्स",
     expo: "एक्सपो",
     gallery: "गैलरी",
@@ -90,67 +90,83 @@ export const prarupamData = {
 // NEW list of departmental events
 export const departmentalEvents = [
   {
-    name: "Hackathon by #include",
-    department: "Information Technology",
+    name: "Workshop on Industrial Automation",
+    department: "Department of Electrical Engineering",
+    description: "Hands-on workshop focusing on the latest trends in industrial automation.",
+    image: "https://media.licdn.com/dms/image/v2/D4D22AQF5Dkdv7ivM5Q/feedshare-shrink_800/B4DZlHx3sZJAAk-/0/1757845882073?e=1760572800&v=beta&t=DfXGgDFOdhYzsmQqEcbAVTPUO-lenGWNje_hi78RM4U",
+    date: "20th September",
+    registrationLink: "YOUR_HOUSE_MODELING_FORM_LINK_HERE"
+  },
+  {
+    name: "Case Study Competition",
+    department: "Centre of Excellence in for Bhartiya Gyan Parampara",
+    description: "Platform to showcase analytical thinking, research skills, and innovative problem-solving abilities.",
+    image: "https://storage.googleapis.com/packback-marketing.appspot.com/1/2018/06/Blog_CaseStudy-1024x683.png",
+    date: "26th September",
+    registrationLink: "https://forms.gle/K9BZaNdpQcizWobM7"
+  },
+  {
+    name: "HackIndore 3.O by #include",
+    department: "Department of Information Technology",
     description: "A thrilling coding marathon to build innovative software solutions.",
-    image: "http://googleusercontent.com/images.google.com/42",
-    date: "13th October",
-    registrationLink: "YOUR_HACKATHON_FORM_LINK_HERE"
+    image: "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/68a0670039def_hackindore-30.webp?d=1920x557",
+    date: "13th September",
+    registrationLink: "https://unstop.com/hackathons/hackindore-30-shri-g-s-institute-of-technology-science-indore-1541844?ref=digitomize"
   },
   {
     name: "House Modeling Competition",
     department: "Mechanical Engineering",
     description: "Design and build intricate models showcasing architectural and engineering prowess.",
-    image: "http://googleusercontent.com/images.google.com/43",
-    date: "13th October",
-    registrationLink: "YOUR_HOUSE_MODELING_FORM_LINK_HERE"
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757851142/WhatsApp_Image_2025-09-02_at_21.39.55_0b47f98e_gvfe31.jpg",
+    date: "13th September",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSffp9D7Qpn_R0Ec-KDD1zUiI2czw7PGpSpGMWsKM_DYbcSHeg/closedform"
   },
   {
     name: "CS Department Workshop",
-    department: "Computer Engineering",
+    department: "Department of Computer Engineering",
     description: "An in-depth workshop on cutting-edge technologies by industry experts.",
-    image: "http://googleusercontent.com/images.google.com/44",
+    image: "https://media.licdn.com/dms/image/v2/D5622AQGKiL3ymDzwCA/feedshare-shrink_800/B56Zjxcbk1HUAk-/0/1756397423326?e=1760572800&v=beta&t=H_uLH2mP3oaJDghB-LtWvirtZNpItjrO53CsfHBK9mg",
     date: "28th August",
-    registrationLink: "YOUR_CS_WORKSHOP_FORM_LINK_HERE"
-  }
+    registrationLink: "https://media.licdn.com/dms/image/v2/D5622AQGKiL3ymDzwCA/feedshare-shrink_800/B56Zjxcbk1HUAk-/0/1756397423326?e=1760572800&v=beta&t=H_uLH2mP3oaJDghB-LtWvirtZNpItjrO53CsfHBK9mg"
+  },
 ];
 
 export const eventTracks = [
-  { 
-    id: 1, 
-    name: "Prototype Competition", 
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track1_acpfxi.png", 
-    link: "/prarupam" 
+  {
+    id: 1,
+    name: "Prototype Competition",
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track1_acpfxi.png",
+    link: "/prarupam"
   },
-  { 
-    id: 2, 
-    name: "Industry Expo", 
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track2_eapi3s.png", 
-    link: "/expo" 
+  {
+    id: 2,
+    name: "Industry Expo",
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track2_eapi3s.png",
+    link: "/expo"
   },
-  { 
-    id: 3, 
-    name: "Invited Talks", 
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track3_x4omsh.png", 
-    link: "/events" 
+  {
+    id: 3,
+    name: "Invited Talks",
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track3_x4omsh.png",
+    link: "/events"
   },
-  { 
-    id: 4, 
-    name: "Student Conference", 
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track4_lpo0s2.png", 
-    link: "/events" 
+  {
+    id: 4,
+    name: "Student Conference",
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track4_lpo0s2.png",
+    link: "/events"
   },
-  { 
-    id: 5, 
-    name: "Roborace & Exciting Games", 
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track5_fkvnni.png", 
-    link: "/events" 
+  {
+    id: 5,
+    name: "Roborace & Exciting Games",
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track5_fkvnni.png",
+    link: "/events"
   },
-  { 
-    id: 6, 
-    name: "Cultural Events", 
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747636/track6_moaljb.png", 
-    link: "/events" 
+  {
+    id: 6,
+    name: "Cultural Events",
+    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747636/track6_moaljb.png",
+    link: "/events"
   },
 ];
 // NEW: A dedicated array for the gallery page with real images
@@ -211,6 +227,7 @@ export const expoData = {
     "Access to a talented pool of students for internships and recruitment.",
     "Explore collaborative research and consultancy opportunities."
   ],
+  registrationLink: "https://forms.gle/hRMavmuyzY7B4GFN7",
   stallPackages: [
     { size: "15 feet x 15 feet", price: "₹12,000" },
     { size: "10 feet x 15 feet", price: "₹8,000" },
