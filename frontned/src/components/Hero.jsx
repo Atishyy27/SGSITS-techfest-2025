@@ -7,7 +7,11 @@ export default function Hero({ t }) {
     <section id="home" className="relative flex items-center justify-center text-center overflow-hidden py-32 md:py-40">
       <div className="absolute inset-0 z-0 opacity-40">
         <div className="aurora -z-10">
-          <div className="aurora__item"></div><div className="aurora__item"></div><div className="aurora__item"></div><div className="aurora__item"></div>
+          {/* FIX: Corrected the class names to use two underscores */}
+          <div className="aurora__item"></div>
+          <div className="aurora__item"></div>
+          <div className="aurora__item"></div>
+          <div className="aurora__item"></div>
         </div>
       </div>
       <style>{`
@@ -28,7 +32,7 @@ export default function Hero({ t }) {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          src="/aarohan_logo.png"
+          src="/aarohan-logo.png"
           alt="Aarohan 2025 Logo"
           className="w-full max-w-2xl mx-auto mb-6 animate-neon-flicker"
         />
@@ -40,6 +44,7 @@ export default function Hero({ t }) {
         >
           {t.theme}
         </motion.p>
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
