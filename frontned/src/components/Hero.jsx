@@ -32,7 +32,7 @@ export default function Hero({ t }) {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          src="/aarohan-logo.png"
+          src="/aarohan_logo.png"
           alt="Aarohan 2025 Logo"
           className="w-full max-w-2xl mx-auto mb-6 animate-neon-flicker"
         />
