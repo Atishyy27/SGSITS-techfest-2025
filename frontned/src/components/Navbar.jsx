@@ -20,7 +20,7 @@ export default function Navbar({ theme, setTheme, lang, setLang }) {
       <header className="hidden md:flex bg-black/30 backdrop-blur-lg shadow-sm sticky top-0 z-50 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between w-full">
           <NavLink to="/" className="flex items-center gap-3">
-            <img src="/aarohan-icon.png" alt="Aarohan Icon" className="h-10" />
+            <img src="/aarohan_icon.png" alt="Aarohan Icon" className="h-10" />
             <div className="text-sm font-bold tracking-wider text-white">SGSITS TechFest</div>
           </NavLink>
 
