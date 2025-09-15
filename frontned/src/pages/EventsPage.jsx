@@ -20,9 +20,12 @@ const EventCard = ({ event, index }) => (
       <h2 className="text-2xl font-bold">{event.name}</h2>
       <p className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-4">{event.department}</p>
       <p className="text-gray-600 dark:text-gray-300 mb-6 flex-grow">{event.description}</p>
-      <Link to="/register" className="w-full mt-auto block text-center py-2 px-4 rounded-lg bg-primary-light text-white hover:opacity-90 transition-opacity">
+      {/* <Link to="/register" className="w-full mt-auto block text-center py-2 px-4 rounded-lg bg-primary-light text-white hover:opacity-90 transition-opacity">
         Register
-      </Link>
+      </Link> */}
+      <a href={event.registrationLink} target="_blank" rel="noopener noreferrer" className="w-full mt-auto block text-center py-2 px-4 rounded-lg bg-primary-light text-white hover:opacity-90 transition-opacity">
+        Register
+      </a>
     </div>
   </motion.div>
 );

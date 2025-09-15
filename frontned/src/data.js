@@ -50,44 +50,6 @@ export const translations = {
   },
 };
 
-export const prarupamData = {
-  title: "PRARUPAM: A Confluence of Innovators",
-  tagline: "Prototype competition of AAROHAN 2025 organized by SGSITS Incubation Forum",
-  description: "A stage to showcase innovations, validate ideas, learn from experts & pitch to investors!",
-  proposalDeadline: "25th September 2025",
-  participationFee: "₹200",
-  whoCanParticipate: "Open for Students, Innovators & Startups!",
-  themes: [
-    "SMART EDUCATION / VILLAGES / CITIES",
-    "CLEAN AND GREEN ENERGY",
-    "INDUSTRY 4.0 AND 5.0",
-    "FINTECH",
-    "HEALTH SCIENCE / LIFE SCIENCE/ BIOTECH / FOODTECH/ VETERINARYTECH/AGRITECH",
-    "WASTE MANAGEMENT / BEST OUT OF WASTE",
-    "EQUIPMENT / SOFTWARE FOR DEFENCE FORCES"
-  ],
-  prizes: {
-    "TRL 1-3 (Research Phase)": [
-      { rank: "1st Prize", amount: "₹3000" }, { rank: "2nd Prize", amount: "₹2000" }, { rank: "3rd Prize", amount: "₹1000" }
-    ],
-    "TRL 4-6 (Development Phase)": [
-      { rank: "1st Prize", amount: "₹7000" }, { rank: "2nd Prize", amount: "₹5000" }, { rank: "3rd Prize", amount: "₹3000" }
-    ],
-    "TRL 7-9 (Implementation Phase)": [
-      { rank: "1st Prize", amount: "₹12000" }, { rank: "2nd Prize", amount: "₹9000" }, { rank: "3rd Prize", amount: "₹6000" }
-    ],
-  },
-  winnerBenefits: [
-    "Pre-Incubation at SIF with Expert mentorship",
-    "Prototype validation",
-    "Business model support",
-    "Exposure to funding opportunities",
-    "Certificates of achievement",
-    "Award for 3 Best Entries"
-  ]
-};
-
-// NEW list of departmental events
 export const departmentalEvents = [
   {
     name: "Workshop on Industrial Automation",
@@ -169,21 +131,15 @@ export const eventTracks = [
     link: "/events"
   },
 ];
-// NEW: A dedicated array for the gallery page with real images
 export const galleryImages = [
-  "https://res.cloudinary.com/df4fnnohe/image/upload/v1757742983/WhatsApp_Image_2025-09-08_at_18.38.04_18f9642e_qidgyv.jpg",
-  "https://res.cloudinary.com/df4fnnohe/image/upload/v1757742976/WhatsApp_Image_2025-09-08_at_18.38.03_e5284848_nklmzf.jpg",
-  // "http://googleusercontent.com/images.google.com/36",
+  { src: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757910156/WhatsApp_Image_2025-09-14_at_22.30.16_32ad1377_azatig.jpg", category: "HackIndore" },
+  { src: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757742983/WhatsApp_Image_2025-09-08_at_18.38.04_18f9642e_qidgyv.jpg", category: "Launch Event" },
+  { src: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757742976/WhatsApp_Image_2025-09-08_at_18.38.03_e5284848_nklmzf.jpg", category: "Launch Event" },
+  // Add more images with categories here
 ];
 
 export const teamData = {
   "Organizing Committee": [
-    { name: "Prof. Neetesh Purohit", role: "Patron, Director", avatar: "https://fcsl.iiita.ac.in/neetesh.jpg" },
-    { name: "Prof. Milind D. Dandekar", role: "Convener, Dean (IPFA)", avatar: "https://i1.rgstatic.net/ii/profile.image/697452025892865-1543296929522_Q512/Milind-Dandekar.jpg" },
-    { name: "Prof. Lalit Purohit", role: "Convener, Dean (ARSD)", avatar: "https://thfvnext.bing.com/th/id/OIP._8RwNv3LdjP9KwTxamh41wAAAA?r=0&o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" },
-    { name: "Prof. Shailendra Sharma", role: "Event Coordinator", avatar: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=YEa1-dUAAAAJ&citpid=2" },
-    { name: "Prof. Krishnakant Dhakar", role: "Co-Coordinator", avatar: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hR9a3mEAAAAJ&citpid=2" },
-    { name: "Prof. Omprakash Tanwar", role: "Co-Coordinator", avatar: "https://tse1.mm.bing.net/th/id/OIP.JCRuziVH-sF5jeHQd9z1GQHaJS?r=0&cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" },
     { name: "Prof. Neetesh Purohit", role: "Patron, Director", avatar: "https://fcsl.iiita.ac.in/neetesh.jpg" },
     { name: "Prof. Milind D. Dandekar", role: "Convener, Dean (IPFA)", avatar: "https://i1.rgstatic.net/ii/profile.image/697452025892865-1543296929522_Q512/Milind-Dandekar.jpg" },
     { name: "Prof. Lalit Purohit", role: "Convener, Dean (ARSD)", avatar: "https://thfvnext.bing.com/th/id/OIP._8RwNv3LdjP9KwTxamh41wAAAA?r=0&o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" },
@@ -218,6 +174,36 @@ export const teamData = {
   ]
 };
 
+export const prarupamData = {
+  title: "PRARUPAM: A Confluence of Innovators",
+  tagline: "Prototype competition of AAROHAN 2025 organized by SGSITS Incubation Forum",
+  description: "A stage to showcase innovations, validate ideas, learn from experts & pitch to investors!",
+  registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfunNAavUxv-0DwSQMwAwAXT6nYcw9UjbrtSw9pYYFFTv8kiw/viewform",
+  proposalDeadline: "25th September 2025",
+  participationFee: "₹200",
+  whoCanParticipate: "Open for Students, Innovators & Startups!",
+  themes: [
+    "SMART EDUCATION / VILLAGES / CITIES", "CLEAN AND GREEN ENERGY", "INDUSTRY 4.0 AND 5.0", "FINTECH",
+    "HEALTH SCIENCE / LIFE SCIENCE/ BIOTECH / FOODTECH/ VETERINARYTECH/AGRITECH",
+    "WASTE MANAGEMENT / BEST OUT OF WASTE", "EQUIPMENT / SOFTWARE FOR DEFENCE FORCES"
+  ],
+  prizes: {
+    "TRL 1-3 (Research Phase)": [
+      { rank: "1st Prize", amount: "₹3000" }, { rank: "2nd Prize", amount: "₹2000" }, { rank: "3rd Prize", amount: "₹1000" }
+    ],
+    "TRL 4-6 (Development Phase)": [
+      { rank: "1st Prize", amount: "₹7000" }, { rank: "2nd Prize", amount: "₹5000" }, { rank: "3rd Prize", amount: "₹3000" }
+    ],
+    "TRL 7-9 (Implementation Phase)": [
+      { rank: "1st Prize", amount: "₹12000" }, { rank: "2nd Prize", amount: "₹9000" }, { rank: "3rd Prize", amount: "₹6000" }
+    ],
+  },
+  winnerBenefits: [
+    "Pre-Incubation at SIF with Expert mentorship", "Prototype validation", "Business model support",
+    "Exposure to funding opportunities", "Certificates of achievement", "Award for 3 Best Entries"
+  ]
+};
+
 export const expoData = {
   about: "As part of AAROHAN - The Annual TechFest of SGSITS, Indore, we are delighted to host the Industry Expo 2025, a premier exhibition where leading industries, enterprises, and innovators can present their cutting-edge products, solutions, and technologies.",
   whyExhibit: [
@@ -227,11 +213,11 @@ export const expoData = {
     "Access to a talented pool of students for internships and recruitment.",
     "Explore collaborative research and consultancy opportunities."
   ],
-  registrationLink: "https://forms.gle/hRMavmuyzY7B4GFN7",
   stallPackages: [
     { size: "15 feet x 15 feet", price: "₹12,000" },
     { size: "10 feet x 15 feet", price: "₹8,000" },
     { size: "10 feet x 10 feet", price: "₹6,000" },
   ],
+  registrationLink: "https://forms.gle/hRMavmuyzY7B4GFN7",
   contactEmail: "IndustryExpoAarohan@gmail.com",
 };

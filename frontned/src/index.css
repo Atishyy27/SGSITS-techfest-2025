@@ -10,10 +10,11 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   /* NEW: Professional, textured background */
-  @apply bg-[#0D1117] text-gray-300;
+  @apply bg-slate-50 text-slate-800 dark:bg-[#0D1117] dark:text-gray-300;
   background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
   background-size: 20px 20px;
 }
+
 
 /* Custom Scrollbar to match the new theme */
 ::-webkit-scrollbar {
