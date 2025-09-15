@@ -29,7 +29,7 @@ export default function TeamPage() {
       <SEO title="Our Team" description="Meet the dedicated teams behind AAROHAN 2025." />
       <div className="py-20 px-4 bg-light-bg dark:bg-dark-bg">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-bold text-center mb-16">Meet the Teams</h1>
+          <h1 className="text-4xl font-bold text-center mb-16">Teams</h1>
           <div className="space-y-16">
             {teams.map((teamName) => (
               <section key={teamName}>
@@ -47,3 +47,5 @@ export default function TeamPage() {
     </>
   );
 }
+
+
