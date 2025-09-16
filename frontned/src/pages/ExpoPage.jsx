@@ -1,41 +1,88 @@
+// src/pages/ExpoPage.jsx
+
 import React from 'react';
 import SEO from '../components/SEO';
 import { expoData } from '../data';
 import { motion } from 'framer-motion';
+import { FaStore, FaHandshake, FaMoneyCheckAlt, FaEnvelope } from 'react-icons/fa';
+
+const FeatureCard = ({ icon, title, content }) => (
+    <div className="border border-slate-700 bg-slate-800/50 p-8 rounded-lg shadow-lg backdrop-blur-sm h-full">
+        <div className="flex items-center gap-4 mb-4">
+            <div className="text-cyan-400 text-3xl">{icon}</div>
+            <h2 className="text-2xl font-bold text-white">{title}</h2>
+        </div>
+        <ul className="space-y-3 list-disc list-inside text-slate-300">
+            {content.map(point => <li key={point}>{point}</li>)}
+        </ul>
+    </div>
+);
 
 export default function ExpoPage() {
   return (
     <>
       <SEO title="Expo" description={expoData.about} />
-      <div className="py-20 px-4 bg-light-bg dark:bg-dark-bg">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <motion.h1 className="text-4xl font-bold">Industry & Startup Expo</motion.h1>
-            <motion.p className="mt-4 text-lg text-gray-500 dark:text-gray-400">{expoData.about}</motion.p>
-            <a href={expoData.registrationLink} target="_blank" rel="noopener noreferrer" className="mt-6 inline-block px-6 py-3 font-semibold rounded-lg bg-primary-light text-white hover:opacity-90 transition-opacity">
-              Book Your Stall / Register Here
-            </a>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div className="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold mb-4">Why Exhibit With Us?</h2>
-              <ul className="space-y-4 list-disc list-inside">
-                {expoData.whyExhibit.map(point => <li key={point}>{point}</li>)}
-              </ul>
+      <div>
+        {/* Hero Section */}
+        <div className="relative h-64 md:h-80 w-full">
+            <img src={expoData.heroImage} alt="Industry Expo Banner" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center text-center p-4">
+                <motion.h1
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-4xl md:text-5xl font-bold text-white"
+                >
+                    Industry & Startup Expo
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="mt-4 text-lg text-cyan-300 max-w-3xl"
+                >
+                    {expoData.about}
+                </motion.p>
             </div>
-            <div className="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold mb-4">Stall Packages</h2>
-              <ul className="space-y-2">
-                {expoData.stallPackages.map(pkg => (
-                  <li key={pkg.size} className="flex justify-between">
-                    <span>{pkg.size}</span>
-                    <span className="font-bold">{pkg.price}</span>
-                  </li>
-                ))}
-              </ul>
-               <p className="text-sm mt-4 text-gray-400">Contact for booking: <a href={`mailto:${expoData.contactEmail}`} className="text-primary-light hover:underline">{expoData.contactEmail}</a></p>
+        </div>
+
+        {/* Main Content */}
+        <div className="max-w-7xl mx-auto p-4 md:p-8">
+            <div className="text-center my-12">
+                <a href={expoData.registrationLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 text-lg font-bold text-black bg-cyan-400 rounded-lg shadow-lg hover:bg-white transition-all transform hover:scale-105">
+                    Book Your Stall / Register Here
+                </a>
             </div>
-          </div>
+
+            <div className="grid md:grid-cols-2 gap-8 items-stretch">
+                <FeatureCard 
+                    icon={<FaHandshake />} 
+                    title="Why Exhibit With Us?"
+                    content={expoData.whyExhibit}
+                />
+                
+                <div className="border border-slate-700 bg-slate-800/50 p-8 rounded-lg shadow-lg backdrop-blur-sm">
+                    <div className="flex items-center gap-4 mb-4">
+                        <FaMoneyCheckAlt className="text-cyan-400 text-3xl" />
+                        <h2 className="text-2xl font-bold text-white">Stall Packages</h2>
+                    </div>
+                    <ul className="space-y-3 text-lg">
+                        {expoData.stallPackages.map(pkg => (
+                            <li key={pkg.size} className="flex justify-between border-b border-dashed border-slate-600 py-2">
+                                <span className="text-slate-300">{pkg.size}</span>
+                                <span className="font-bold text-white">{pkg.price}</span>
+                            </li>
+                        ))}
+                    </ul>
+                    <div className="mt-6 text-center text-slate-400 flex items-center justify-center gap-2">
+                        <FaEnvelope />
+                        <span>Contact for booking: </span>
+                        <a href={`mailto:${expoData.contactEmail}`} className="text-cyan-400 hover:underline">
+                            {expoData.contactEmail}
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </>

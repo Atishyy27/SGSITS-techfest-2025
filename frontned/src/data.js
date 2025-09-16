@@ -10,46 +10,6 @@ export const organizers = [
   // { name: "SGSITS Logo 7", logo: "/logos/image7.png" },
 ];
 
-export const translations = {
-  en: {
-    title: "AAROHAN 2025",
-    theme: "Ignite, Inspire, and Impact",
-    subtitle: "SGSITS's Inaugural TechFest",
-    heroDesc: "The ultimate convergence of technology, innovation, and talent at SGSITS, Indore.",
-    home: "Home",
-    prarupam: "Prarupam",
-    events: "Events",
-    expo: "Expo",
-    gallery: "Gallery",
-    team: "Team",
-    register: "Register Now",
-    flagship_title: "Flagship Events",
-    aarohan_title: "Aarohan",
-    aarohan_desc: "The heart of TechFest, featuring a diverse range of technical and cultural events.",
-    award_title: "Gyan Innovation Award",
-    award_desc: "Showcase your groundbreaking projects and compete for the most prestigious award of the fest.",
-  },
-  // FIX: Added the complete Hindi translation object
-  hi: {
-    title: "आरोहण 2025",
-    theme: "प्रेरणा, प्रज्वलन, परिवर्तन",
-    subtitle: "SGSITS का पहला टेकफेस्ट",
-    heroDesc: "SGSITS, इंदौर में प्रौद्योगिकी, नवाचार और प्रतिभा का संगम।",
-    home: "होम",
-    prarupam: "प्रारूपम",
-    events: "इवेंट्स",
-    expo: "एक्सपो",
-    gallery: "गैलरी",
-    team: "टीम",
-    register: "अभी रजिस्टर करें",
-    flagship_title: "प्रमुख इवेंट्स",
-    aarohan_title: "आरोहण",
-    aarohan_desc: "टेकफेस्ट का केंद्र, जिसमें विभिन्न तकनीकी और सांस्कृतिक कार्यक्रम शामिल हैं।",
-    award_title: "ज्ञान इनोवेशन अवार्ड",
-    award_desc: "अपनी अभूतपूर्व परियोजनाओं का प्रदर्शन करें और फेस्ट के सबसे प्रतिष्ठित पुरस्कार के लिए प्रतिस्पर्धा करें।",
-  },
-};
-
 export const departmentalEvents = [
   {
     name: "Workshop on Industrial Automation",
@@ -93,44 +53,25 @@ export const departmentalEvents = [
   },
 ];
 
-export const eventTracks = [
-  {
-    id: 1,
-    name: "Prototype Competition",
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track1_acpfxi.png",
-    link: "/prarupam"
-  },
-  {
-    id: 2,
-    name: "Industry Expo",
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track2_eapi3s.png",
-    link: "/expo"
-  },
-  {
-    id: 3,
-    name: "Invited Talks",
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track3_x4omsh.png",
-    link: "/events"
-  },
-  {
-    id: 4,
-    name: "Student Conference",
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track4_lpo0s2.png",
-    link: "/events"
-  },
-  {
-    id: 5,
-    name: "Roborace & Exciting Games",
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track5_fkvnni.png",
-    link: "/events"
-  },
-  {
-    id: 6,
-    name: "Cultural Events",
-    image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747636/track6_moaljb.png",
-    link: "/events"
-  },
-];
+export const eventTracks = {
+  en: [
+    { id: 1, name: "Prototype Competition", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track1_acpfxi.png", link: "/prarupam" },
+    { id: 2, name: "Industry Expo", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track2_eapi3s.png", link: "/expo" },
+    { id: 3, name: "Invited Talks", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track3_x4omsh.png", link: "/events" },
+    { id: 4, name: "Student Conference", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track4_lpo0s2.png", link: "/events" },
+    { id: 5, name: "Roborace & Exciting Games", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track5_fkvnni.png", link: "/events" },
+    { id: 6, name: "Cultural Events", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747636/track6_moaljb.png", link: "/events" },
+  ],
+  hi: [
+    { id: 1, name: "प्रोटोटाइप प्रतियोगिता", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track1_acpfxi.png", link: "/prarupam" },
+    { id: 2, name: "उद्योग एक्सपो", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track2_eapi3s.png", link: "/expo" },
+    { id: 3, name: "आमंत्रित वार्ता", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track3_x4omsh.png", link: "/events" },
+    { id: 4, name: "छात्र सम्मेलन", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747635/track4_lpo0s2.png", link: "/events" },
+    { id: 5, name: "रोबोट रेस और रोमांचक खेल", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747634/track5_fkvnni.png", link: "/events" },
+    { id: 6, name: "सांस्कृतिक कार्यक्रम", image: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757747636/track6_moaljb.png", link: "/events" },
+  ]
+};
+
 export const galleryImages = [
   { src: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757910156/WhatsApp_Image_2025-09-14_at_22.30.16_32ad1377_azatig.jpg", category: "HackIndore" },
   { src: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757742983/WhatsApp_Image_2025-09-08_at_18.38.04_18f9642e_qidgyv.jpg", category: "Launch Event" },
@@ -211,6 +152,7 @@ export const teamData = {
 
 
 export const prarupamData = {
+  heroImage: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757851142/prarupam-banner_cdefgh.jpg", // REPLACE with your Cloudinary URL
   title: "PRARUPAM: A Confluence of Innovators",
   tagline: "Prototype competition of AAROHAN 2025 organized by SGSITS Incubation Forum",
   description: "A stage to showcase innovations, validate ideas, learn from experts & pitch to investors!",
@@ -237,7 +179,7 @@ export const prarupamData = {
   winnerBenefits: [
     "Pre-Incubation at SIF with Expert mentorship", "Prototype validation", "Business model support",
     "Exposure to funding opportunities", "Certificates of achievement", "Award for 3 Best Entries"
-  ]
+  ],
 };
 
 export const expoData = {
