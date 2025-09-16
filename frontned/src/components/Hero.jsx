@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { generalRegistrationLink } from '../data.js';
 
 export default function Hero({ t }) {
   return (
@@ -51,9 +52,13 @@ export default function Hero({ t }) {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="mt-10"
         >
-          <Link to="/register" className="px-8 py-3 font-bold text-black bg-cyan-400 rounded-lg shadow-lg hover:bg-white transition-all">
+          {/* <Link to="/register" className="px-8 py-3 font-bold text-black bg-cyan-400 rounded-lg shadow-lg hover:bg-white transition-all">
             {t.register}
-          </Link>
+          </Link> */}
+          <a href={generalRegistrationLink} target="_blank" rel="noopener noreferrer" 
+            className="px-4 py-2 text-sm font-semibold rounded-lg bg-cyan-400 text-black hover:bg-white transition-colors">
+            {t.register}
+          </a>
         </motion.div>
       </div>
     </section>
