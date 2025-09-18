@@ -1,5 +1,44 @@
 export const generalRegistrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSdsRU3GvP8jq0EW6QJDyRUVOOg5gWQeWc5UqQ_rNOFy7VXMdQ/viewform"; // You will replace this with your GForm link
 
+export const translations = {
+  en: {
+    hero_theme: "Ignite, Inspire, and Impact",
+    register_now: "Register Now",
+    nav_home: "Home",
+    nav_prarupam: "Prarupam",
+    nav_events: "Events",
+    nav_expo: "Expo",
+    nav_gallery: "Gallery",
+    nav_team: "Team",
+    about_aarohan_title: "About Aarohan",
+    about_aarohan_desc: "The heart of the TechFest, featuring a diverse range of technical and cultural events.",
+    explore_events: "Explore Our Events",
+    more_events: "More Events",
+    conference_card_title: "Student Research Conference",
+    conference_card_subtitle: "Organized by IEEE Student Branch",
+    learn_more: "Learn More",
+    register: "Register",
+  },
+  hi: {
+    hero_theme: "प्रेरणा, प्रज्वलन, परिवर्तन",
+    register_now: "अभी रजिस्टर करें",
+    nav_home: "होम",
+    nav_prarupam: "प्रारूपम",
+    nav_events: "इवेंट्स",
+    nav_expo: "एक्सपो",
+    nav_gallery: "गैलरी",
+    nav_team: "टीम",
+    about_aarohan_title: "आरोहण के बारे में",
+    about_aarohan_desc: "टेकफेस्ट का केंद्र, जिसमें विभिन्न तकनीकी और सांस्कृतिक कार्यक्रम शामिल हैं।",
+    explore_events: "हमारे इवेंट्स देखें",
+    more_events: "और इवेंट्स",
+    conference_card_title: "छात्र अनुसंधान सम्मेलन",
+    conference_card_subtitle: "आईईईई छात्र शाखा द्वारा आयोजित",
+    learn_more: "और जानें",
+    register: "रजिस्टर करें",
+  },
+};
+
 export const organizers = [
   { name: "SGSITS Logo 1", logo: "/logos/image1.png" },
   { name: "SGSITS Logo 2", logo: "/logos/image2.png" },
@@ -150,52 +189,142 @@ export const teamData = {
   // ],
 };
 
-
 export const prarupamData = {
-  heroImage: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757851142/prarupam-banner_cdefgh.jpg", // REPLACE with your Cloudinary URL
-  title: "PRARUPAM: A Confluence of Innovators",
-  tagline: "Prototype competition of AAROHAN 2025 organized by SGSITS Incubation Forum",
-  description: "A stage to showcase innovations, validate ideas, learn from experts & pitch to investors!",
-  registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfunNAavUxv-0DwSQMwAwAXT6nYcw9UjbrtSw9pYYFFTv8kiw/viewform",
-  proposalDeadline: "25th September 2025",
-  participationFee: "₹200",
-  whoCanParticipate: "Open for Students, Innovators & Startups!",
-  themes: [
-    "SMART EDUCATION / VILLAGES / CITIES", "CLEAN AND GREEN ENERGY", "INDUSTRY 4.0 AND 5.0", "FINTECH",
-    "HEALTH SCIENCE / LIFE SCIENCE/ BIOTECH / FOODTECH/ VETERINARYTECH/AGRITECH",
-    "WASTE MANAGEMENT / BEST OUT OF WASTE", "EQUIPMENT / SOFTWARE FOR DEFENCE FORCES"
-  ],
-  prizes: {
-    "TRL 1-3 (Research Phase)": [
-      { rank: "1st Prize", amount: "₹3000" }, { rank: "2nd Prize", amount: "₹2000" }, { rank: "3rd Prize", amount: "₹1000" }
-    ],
-    "TRL 4-6 (Development Phase)": [
-      { rank: "1st Prize", amount: "₹7000" }, { rank: "2nd Prize", amount: "₹5000" }, { rank: "3rd Prize", amount: "₹3000" }
-    ],
-    "TRL 7-9 (Implementation Phase)": [
-      { rank: "1st Prize", amount: "₹12000" }, { rank: "2nd Prize", amount: "₹9000" }, { rank: "3rd Prize", amount: "₹6000" }
-    ],
+  en: {
+    heroImage: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757851142/prarupam-banner_cdefgh.jpg",
+    brochureUrl: "YOUR_CLOUDINARY_PRARUPAM_PDF_URL_HERE",
+    title: "PRARUPAM: A Confluence of Innovators",
+    tagline: "Prototype competition of AAROHAN 2025 organized by SGSITS Incubation Forum",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfunNAavUxv-0DwSQMwAwAXT6nYcw9UjbrtSw9pYYFFTv8kiw/viewform",
+    proposalDeadline: "25th September 2025",
+    participationFee: "₹200",
+    whoCanParticipate: "Open for Students, Innovators & Startups!",
+    themes_title: "Main Themes",
+    themes: ["SMART EDUCATION / VILLAGES / CITIES", "CLEAN AND GREEN ENERGY", "INDUSTRY 4.0 AND 5.0", "FINTECH", "HEALTH SCIENCE / LIFE SCIENCE/ BIOTECH / FOODTECH/ VETERINARYTECH/AGRITECH", "WASTE MANAGEMENT / BEST OUT OF WASTE", "EQUIPMENT / SOFTWARE FOR DEFENCE FORCES"],
+    prizes_title: "Prizes by TRL",
+    prizes: { "TRL 1-3 (Research Phase)": [{ rank: "1st Prize", amount: "₹3000" }, { rank: "2nd Prize", amount: "₹2000" }, { rank: "3rd Prize", amount: "₹1000" }], "TRL 4-6 (Development Phase)": [{ rank: "1st Prize", amount: "₹7000" }, { rank: "2nd Prize", amount: "₹5000" }, { rank: "3rd Prize", amount: "₹3000" }], "TRL 7-9 (Implementation Phase)": [{ rank: "1st Prize", amount: "₹12000" }, { rank: "2nd Prize", amount: "₹9000" }, { rank: "3rd Prize", amount: "₹6000" }] },
+    key_info_title: "Key Info",
+    deadline_label: "Proposal Deadline",
+    fee_label: "Participation Fee",
+    who_can_participate_title: "Who Can Participate?",
+    benefits_title: "Winner Benefits",
+    winnerBenefits: ["Pre-Incubation at SIF with Expert mentorship", "Prototype validation", "Business model support", "Exposure to funding opportunities", "Certificates of achievement", "Award for 3 Best Entries"],
   },
-  winnerBenefits: [
-    "Pre-Incubation at SIF with Expert mentorship", "Prototype validation", "Business model support",
-    "Exposure to funding opportunities", "Certificates of achievement", "Award for 3 Best Entries"
-  ],
+  hi: {
+    heroImage: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757851142/prarupam-banner_cdefgh.jpg",
+    brochureUrl: "https://zlksaqmy58.ucarecd.net/710cca2b-e0f4-4d3f-add0-30bb9930e41a/Aarohan_expo.pdf",
+    title: "प्रारूपम: नवप्रवर्तकों का संगम",
+    tagline: "SGSITS इन्क्यूबेशन फोरम द्वारा आयोजित आरोहण 2025 की प्रोटोटाइप प्रतियोगिता",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfunNAavUxv-0DwSQMwAwAXT6nYcw9UjbrtSw9pYYFFTv8kiw/viewform",
+    proposalDeadline: "25 सितंबर 2025",
+    participationFee: "₹200",
+    whoCanParticipate: "छात्रों, नवप्रवर्तकों और स्टार्टअप्स के लिए खुला है!",
+    themes_title: "मुख्य विषय",
+    themes: ["स्मार्ट शिक्षा / गाँव / शहर", "स्वच्छ और हरित ऊर्जा", "उद्योग 4.0 और 5.0", "फिनटेक", "स्वास्थ्य विज्ञान / जीव विज्ञान / बायोटेक / फूडटेक / पशु चिकित्सा / एग्रीटेक", "अपशिष्ट प्रबंधन / कचरे से सर्वोत्तम", "रक्षा बलों के लिए उपकरण / सॉफ्टवेयर"],
+    prizes_title: "टीआरएल द्वारा पुरस्कार",
+    prizes: { "टीआरएल 1-3 (अनुसंधान चरण)": [{ rank: "प्रथम पुरस्कार", amount: "₹3000" }, { rank: "द्वितीय पुरस्कार", amount: "₹2000" }, { rank: "तृतीय पुरस्कार", amount: "₹1000" }], "टीआरएल 4-6 (विकास चरण)": [{ rank: "प्रथम पुरस्कार", amount: "₹7000" }, { rank: "द्वितीय पुरस्कार", amount: "₹5000" }, { rank: "तृतीय पुरस्कार", amount: "₹3000" }], "टीआरएल 7-9 (कार्यान्वयन चरण)": [{ rank: "प्रथम पुरस्कार", amount: "₹12000" }, { rank: "द्वितीय पुरस्कार", amount: "₹9000" }, { rank: "तृतीय पुरस्कार", amount: "₹6000" }] },
+    key_info_title: "मुख्य जानकारी",
+    deadline_label: "प्रस्ताव की अंतिम तिथि",
+    fee_label: "भागीदारी शुल्क",
+    who_can_participate_title: "कौन भाग ले सकता है?",
+    benefits_title: "विजेता के लाभ",
+    winnerBenefits: ["विशेषज्ञ सलाह के साथ SIF में प्री-इन्क्यूबेशन", "प्रोटोटाइप सत्यापन", "बिजनेस मॉडल समर्थन", "फंडिंग के अवसरों का प्रदर्शन", "उपलब्धि प्रमाण पत्र", "3 सर्वश्रेष्ठ प्रविष्टियों के लिए पुरस्कार"],
+  }
 };
 
+// Expo Data - Now with 'en' and 'hi' keys
 export const expoData = {
-  about: "As part of AAROHAN - The Annual TechFest of SGSITS, Indore, we are delighted to host the Industry Expo 2025, a premier exhibition where leading industries, enterprises, and innovators can present their cutting-edge products, solutions, and technologies.",
-  whyExhibit: [
-    "Showcase your products, services, and solutions to thousands of visitors.",
-    "Network with industry leaders, academicians, researchers, and students.",
-    "Gain brand visibility in central India's leading engineering institute - SGSITS.",
-    "Access to a talented pool of students for internships and recruitment.",
-    "Explore collaborative research and consultancy opportunities."
-  ],
-  stallPackages: [
-    { size: "15 feet x 15 feet", price: "₹12,000" },
-    { size: "10 feet x 15 feet", price: "₹8,000" },
-    { size: "10 feet x 10 feet", price: "₹6,000" },
-  ],
-  registrationLink: "https://forms.gle/hRMavmuyzY7B4GFN7",
-  contactEmail: "IndustryExpoAarohan@gmail.com",
+  en: {
+    heroImage: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757851142/expo-banner_ijklmn.jpg",
+    brochureUrl: "YOUR_CLOUDINARY_EXPO_PDF_URL_HERE",
+    about: "As part of AAROHAN - The Annual TechFest of SGSITS, Indore, we are delighted to host the Industry Expo 2025, a premier exhibition where leading industries, enterprises, and innovators can present their cutting-edge products, solutions, and technologies.",
+    whyExhibit_title: "Why Exhibit With Us?",
+    whyExhibit: ["Showcase your products, services, and solutions to thousands of visitors.", "Network with industry leaders, academicians, researchers, and students.", "Gain brand visibility in central India's leading engineering institute - SGSITS.", "Access to a talented pool of students for internships and recruitment.", "Explore collaborative research and consultancy opportunities."],
+    stallPackages_title: "Stall Packages",
+    stallPackages: [{ size: "15 feet x 15 feet", price: "₹12,000" }, { size: "10 feet x 15 feet", price: "₹8,000" }, { size: "10 feet x 10 feet", price: "₹6,000" }],
+    registrationLink: "https://forms.gle/hRMavmuyzY7B4GFN7",
+    contactEmail: "IndustryExpoAarohan@gmail.com",
+    contact_label: "Contact for booking:"
+  },
+  hi: {
+    heroImage: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757851142/expo-banner_ijklmn.jpg",
+    brochureUrl: "YOUR_CLOUDINARY_EXPO_PDF_URL_HERE",
+    about: "आरोहण - SGSITS, इंदौर के वार्षिक टेकफेस्ट के हिस्से के रूप में, हम उद्योग एक्सपो 2025 की मेजबानी करते हुए प्रसन्न हैं, जो एक प्रमुख प्रदर्शनी है जहाँ अग्रणी उद्योग, उद्यम और नवप्रवर्तक अपने अत्याधुनिक उत्पादों, समाधानों और प्रौद्योगिकियों को प्रस्तुत कर सकते हैं।",
+    whyExhibit_title: "हमारे साथ प्रदर्शनी क्यों करें?",
+    whyExhibit: ["हजारों आगंतुकों के सामने अपने उत्पादों, सेवाओं और समाधानों का प्रदर्शन करें।", "उद्योग के नेताओं, शिक्षाविदों, शोधकर्ताओं और छात्रों के साथ नेटवर्क बनाएं।", "मध्य भारत के अग्रणी इंजीनियरिंग संस्थान - SGSITS में ब्रांड दृश्यता प्राप्त करें।", "इंटर्नशिप और भर्ती के लिए प्रतिभाशाली छात्रों के एक पूल तक पहुंच।", "सहयोगी अनुसंधान और परामर्श के अवसरों का अन्वेषण करें।"],
+    stallPackages_title: "स्टाल पैकेज",
+    stallPackages: [{ size: "15 फीट x 15 फीट", price: "₹12,000" }, { size: "10 फीट x 15 फीट", price: "₹8,000" }, { size: "10 फीट x 10 फीट", price: "₹6,000" }],
+    registrationLink: "https://forms.gle/hRMavmuyzY7B4GFN7",
+    contactEmail: "IndustryExpoAarohan@gmail.com",
+    contact_label: "बुकिंग के लिए संपर्क करें:"
+  }
+};
+
+export const studentResearchConferenceData = {
+  en: {
+    title: "Student Research Conference",
+    brochureUrl: "/SRC Brochure.pdf",
+    registrationLink: "https://forms.gle/nwxtknprqzrnrggq8",
+    templateLink: "YOUR_IEEE_TEMPLATE_DOCUMENT_LINK_HERE",
+    guidelines: {
+      title: "Paper Submission Guidelines",
+      points: [
+        { title: "Paper Length", content: "Full papers must be limited to 4 pages (1500-word limit), inclusive of figures, tables, and references." },
+        { title: "Paper Format (IEEE Standard)", content: "Use the official Conference Template. Font sizes: Title (12pt Bold), Headings (10pt Bold), Sub-headings (10pt Bold Italic), Body (10pt), References (10pt). Figures and tables must be clearly labeled and high quality." },
+        { title: "Structure of Paper", content: "Title, Author(s), Abstract (150-200 words), Keywords (3-5), Introduction, Literature Review, Methodology, Results & Discussion, Conclusion & Future Work, Acknowledgment, and References (IEEE style)." },
+        { title: "File Submission & Review", content: "Accepted format is PDF only. All papers will be peer-reviewed for originality and quality. Plagiarism check will be conducted (Overall ≤20%, AI-generated ≤5%)." },
+      ],
+    },
+    importantDates: {
+      title: "Important Dates",
+      dates: [
+        { event: "Paper Submission Starts", date: "4th Sept 2025" },
+        { event: "Paper Submission Deadline", date: "20th Sept 2025" },
+        { event: "Acceptance Notification", date: "25th Sept 2025" },
+        { event: "Registration Last Date", date: "30th Sept 2025" },
+        { event: "Conference Dates", date: "11-12th Oct 2025" },
+      ],
+    },
+    presentation: {
+      title: "Presentation Rules",
+      points: [
+        { title: "Mandatory Presentation", content: "Accepted papers must be presented by at least one author during the conference (offline mode only)." },
+        { title: "Presentation Type", content: "Papers will be selected for either Oral Presentation (8-10 mins + 2 mins Q&A) or Poster Presentation (A1 size recommended)." },
+        { title: "Registration", content: "At least one author must register and pay the fees. Any additional authors attending must also pay the registration fees." },
+      ]
+    }
+  },
+  hi: {
+    title: "छात्र अनुसंधान सम्मेलन",
+    brochureUrl: "/SRC Brochure.pdf",
+    registrationLink: "https://forms.gle/nwxtknprqzrnrggq8",
+    templateLink: "YOUR_IEEE_TEMPLATE_DOCUMENT_LINK_HERE",
+    guidelines: {
+      title: "पेपर सबमिशन दिशानिर्देश",
+      points: [
+        { title: "पेपर की लंबाई", content: "पूर्ण पेपर 4 पृष्ठों (1500-शब्द सीमा) तक सीमित होना चाहिए, जिसमें चित्र, तालिकाएं और संदर्भ शामिल हैं।" },
+        { title: "पेपर प्रारूप (आईईईई मानक)", content: "आधिकारिक सम्मेलन टेम्पलेट का उपयोग करें। फ़ॉन्ट आकार: शीर्षक (12pt बोल्ड), मुख्य शीर्षक (10pt बोल्ड), उप-शीर्षक (10pt बोल्ड इटैलिक), मुख्य सामग्री (10pt), संदर्भ (10pt)।" },
+        { title: "पेपर की संरचना", content: "शीर्षक, लेखक, सार (150-200 शब्द), कीवर्ड (3-5), परिचय, साहित्य समीक्षा, कार्यप्रणाली, परिणाम और चर्चा, निष्कर्ष और भविष्य के कार्य, आभार, और संदर्भ (आईईईई शैली)।" },
+        { title: "फाइल सबमिशन और समीक्षा", content: "केवल पीडीएफ प्रारूप स्वीकार्य है। सभी पेपरों की मौलिकता और गुणवत्ता के लिए सहकर्मी-समीक्षा की जाएगी। साहित्यिक चोरी की जांच की जाएगी (कुल ≤20%, एआई-जनित ≤5%)।" },
+      ],
+    },
+    importantDates: {
+      title: "महत्वपूर्ण तिथियाँ",
+      dates: [
+        { event: "पेपर सबमिशन प्रारंभ", date: "4 सितंबर 2025" },
+        { event: "पेपर सबमिशन की अंतिम तिथि", date: "20 सितंबर 2025" },
+        { event: "स्वीकृति की सूचना", date: "25 सितंबर 2025" },
+        { event: "पंजीकरण की अंतिम तिथि", date: "30 सितंबर 2025" },
+        { event: "सम्मेलन की तिथियाँ", date: "11-12 अक्टूबर 2025" },
+      ],
+    },
+    presentation: {
+      title: "प्रस्तुति नियम",
+      points: [
+        { title: "अनिवार्य प्रस्तुति", content: "स्वीकृत पेपरों को सम्मेलन के दौरान कम से कम एक लेखक द्वारा प्रस्तुत किया जाना चाहिए (केवल ऑफ़लाइन मोड)।" },
+        { title: "प्रस्तुति का प्रकार", content: "पेपरों का चयन या तो मौखिक प्रस्तुति (8-10 मिनट + 2 मिनट प्रश्नोत्तर) या पोस्टर प्रस्तुति (A1 आकार अनुशंसित) के लिए किया जाएगा।" },
+        { title: "पंजीकरण", content: "कम से कम एक लेखक को पंजीकरण करना होगा और शुल्क का भुगतान करना होगा। भाग लेने वाले किसी भी अतिरिक्त लेखक को भी पंजीकरण शुल्क का भुगतान करना होगा।" },
+      ]
+    }
+  }
 };

@@ -2,23 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { generalRegistrationLink } from '../data.js';
 
-// Accept the 't' function as a prop for translations
 export default function Hero({ t }) {
   return (
     <section 
       id="home" 
       className="relative flex items-center justify-center text-center overflow-hidden py-32 md:py-40"
     >
-      {/* Container for all background effects */}
+      {/* Container for background effects */}
       <div className="absolute inset-0 z-0">
-        
-        {/* Effect 1: Tailwind Animated Gradients */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 blur-3xl animate-pulse"></div>
           <div className="absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-500 blur-3xl animate-spin-slow"></div>
         </div>
-
-        {/* Effect 2: CSS Keyframe Aurora */}
         <div className="aurora -z-10 opacity-60">
           <div className="aurora__item"></div>
           <div className="aurora__item"></div>
@@ -27,7 +22,6 @@ export default function Hero({ t }) {
         </div>
       </div>
 
-      {/* Inline style for the CSS Keyframe Aurora effect */}
       <style>{`
         .aurora { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
         .aurora__item { position: absolute; border-radius: 50%; width: 50vw; height: 50vw; filter: blur(80px); mix-blend-mode: screen; }
@@ -57,10 +51,10 @@ export default function Hero({ t }) {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-xl md:text-2xl font-semibold text-cyan-300 tracking-widest uppercase"
         >
-          {/* Use the t() function for the theme */}
-          {t('hero_theme')}
+          {/* FIX: Access the value as a property of the 't' object */}
+          {t.hero_theme}
         </motion.p>
-
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -73,8 +67,8 @@ export default function Hero({ t }) {
             rel="noopener noreferrer" 
             className="px-8 py-3 font-bold text-black bg-cyan-400 rounded-lg shadow-lg hover:bg-white transition-all"
           >
-            {/* Use the t() function for the button */}
-            {t('register_now')}
+            {/* FIX: Access the value as a property of the 't' object */}
+            {t.register_now}
           </a>
         </motion.div>
       </div>

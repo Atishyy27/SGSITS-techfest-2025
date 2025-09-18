@@ -1,54 +1,69 @@
-// src/components/BrochureViewer.jsx
 import React, { useState } from 'react';
-import * as Dialog from '@radix-ui/react-dialog';
 import { Document, Page, pdfjs } from 'react-pdf';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
+// FIX: Corrected the CSS import paths by removing "/esm"
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
+import { X, Loader } from 'lucide-react';
 
-// Required setup for react-pdf
+// Required setup for the PDF worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
-export default function BrochureViewer() {
+export default function BrochureViewer({ fileUrl, children }) {
+  const [isOpen, setIsOpen] = useState(false);
   const [numPages, setNumPages] = useState(null);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
 
-  return (
-    <Dialog.Root>
-      <Dialog.Trigger asChild>
-        <button className="px-6 py-3 font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition-all">
-          View Brochure
-        </button>
-      </Dialog.Trigger>
-      
-      <Dialog.Portal>
-        <Dialog.Overlay className="bg-black/80 fixed inset-0 z-40" />
-        <Dialog.Content className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-[90vw] h-[90vh] max-w-4xl bg-slate-800 rounded-lg shadow-2xl p-4 overflow-y-auto">
-          
-          <Document 
-            file="/aarohan_brochure.pdf" // Path to your PDF in the 'public' folder
-            onLoadSuccess={onDocumentLoadSuccess}
-            className="flex flex-col items-center"
-          >
-            {Array.from(new Array(numPages), (el, index) => (
-              <Page 
-                key={`page_${index + 1}`} 
-                pageNumber={index + 1} 
-                width={800} // Adjust width as needed
-                className="mb-4 shadow-lg"
-              />
-            ))}
-          </Document>
+  // Prevents background scroll when the viewer is open
+  if (isOpen) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
+  }
 
-          <Dialog.Close asChild>
-            <button className="absolute top-4 right-4 text-white bg-black/50 rounded-full p-2 hover:bg-black/80" aria-label="Close">
-              X
+  return (
+    <>
+      {/* This div acts as the button to open the viewer */}
+      <div onClick={() => setIsOpen(true)} className="cursor-pointer">
+        {children}
+      </div>
+
+      {isOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm">
+          <div className="relative w-[90vw] h-[90vh] max-w-4xl bg-slate-900 border border-slate-700 rounded-lg shadow-2xl p-4 overflow-y-auto">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-3 right-3 text-slate-400 bg-slate-800 rounded-full p-2 hover:bg-slate-700 hover:text-white transition-colors z-10"
+              aria-label="Close"
+            >
+              <X size={20} />
             </button>
-          </Dialog.Close>
-        </Dialog.Content>
-      </Dialog.Portal>
-    </Dialog.Root>
+
+            <Document
+              file={fileUrl}
+              onLoadSuccess={onDocumentLoadSuccess}
+              loading={
+                <div className="flex flex-col items-center justify-center h-full text-white">
+                  <Loader className="animate-spin mb-4" />
+                  <p>Loading Brochure...</p>
+                </div>
+              }
+              className="flex flex-col items-center"
+            >
+              {Array.from(new Array(numPages || 0), (el, index) => (
+                <Page
+                  key={`page_${index + 1}`}
+                  pageNumber={index + 1}
+                  width={Math.min(window.innerWidth * 0.8, 800)} // Makes the PDF width responsive
+                  className="mb-4 shadow-lg"
+                />
+              ))}
+            </Document>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

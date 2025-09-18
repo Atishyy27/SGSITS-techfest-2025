@@ -13,6 +13,7 @@ import Footer from './components/Footer.jsx';
 import RegisterPage from './pages/RegisterPage';
 import GalleryPage from './pages/GalleryPage';
 import ScrollToTopButton from './components/ScrollToTopButton.jsx';
+import StudentResearchConferencePage from './pages/StudentResearchConferencePage.jsx';
 
 export default function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
@@ -62,6 +63,8 @@ export default function App() {
         <Route path="gallery" element={<GalleryPage />} />
         <Route path="team" element={<TeamPage />} />
         <Route path="register" element={<RegisterPage />} />
+        <Route path="student-research-conference" element={<StudentResearchConferencePage lang={lang} />} />
+  
       </Route>
     </Routes>
   );
