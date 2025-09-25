@@ -1,4 +1,4 @@
-export const generalRegistrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSdsRU3GvP8jq0EW6QJDyRUVOOg5gWQeWc5UqQ_rNOFy7VXMdQ/viewform"; // You will replace this with your GForm link
+export const generalRegistrationLink = "https://sgsitsconnect.com/events/68cc282bcd91022efab4"; // You will replace this with your GForm link
 
 export const translations = {
   en: {
