@@ -129,7 +129,7 @@ export const teamData = {
     { name: "Prof. Neetesh Purohit", role: "Patron, Director", avatar: "https://fcsl.iiita.ac.in/neetesh.jpg" },
     { name: "Prof. Milind D. Dandekar", role: "Convener, Dean (IPFA)", avatar: "https://i1.rgstatic.net/ii/profile.image/697452025892865-1543296929522_Q512/Milind-Dandekar.jpg" },
     { name: "Prof. Lalit Purohit", role: "Convener, Dean (ARSD)", avatar: "https://thfvnext.bing.com/th/id/OIP._8RwNv3LdjP9KwTxamh41wAAAA?r=0&o=7&cb=thfvnextrm=3&rs=1&pid=ImgDetMain&o=7&rm=3" },
-    { name: "Prof. B. S. More", role: "Convener, Dean (SSAA)", avatar: "https://www.sgsits.ac.in/images/Departments/me/bhupendra_more-resize.jpg" },
+    { name: "Prof. B. S. More", role: "Convener, Dean (SSAA)", avatar: "https://drive.google.com/uc?export=view&id=1l_PDej4douDSkRBlQXizw1RzWd_31rqy" },
     { name: "Prof. Shailendra Sharma", role: "Event Coordinator", avatar: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=YEa1-dUAAAAJ&citpid=2" },
     { name: "Prof. Krishnakant Dhakar", role: "Co-Coordinator", avatar: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=hR9a3mEAAAAJ&citpid=2" },
     { name: "Prof. Omprakash Tanwar", role: "Co-Coordinator", avatar: "https://tse1.mm.bing.net/th/id/OIP.JCRuziVH-sF5jeHQd9z1GQHaJS?r=0&cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" },
