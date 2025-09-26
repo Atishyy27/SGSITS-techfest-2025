@@ -241,7 +241,7 @@ export const expoData = {
     whyExhibit_title: "Why Exhibit With Us?",
     whyExhibit: ["Showcase your products, services, and solutions to thousands of visitors.", "Network with industry leaders, academicians, researchers, and students.", "Gain brand visibility in central India's leading engineering institute - SGSITS.", "Access to a talented pool of students for internships and recruitment.", "Explore collaborative research and consultancy opportunities."],
     stallPackages_title: "Stall Packages",
-    stallPackages: [{ size: "15 feet x 15 feet", price: "₹12,000" }, { size: "10 feet x 15 feet", price: "₹8,000" }, { size: "10 feet x 10 feet", price: "₹6,000" }],
+    stallPackages: [{ size: "10 feet x 20 feet", price: "₹10,000" },{ size: "10 feet x 10 feet", price: "₹6,000" }],
     registrationLink: "https://forms.gle/hRMavmuyzY7B4GFN7",
     contactEmail: "IndustryExpoAarohan@gmail.com",
     contact_label: "Contact for booking:"
@@ -253,7 +253,7 @@ export const expoData = {
     whyExhibit_title: "हमारे साथ प्रदर्शनी क्यों करें?",
     whyExhibit: ["हजारों आगंतुकों के सामने अपने उत्पादों, सेवाओं और समाधानों का प्रदर्शन करें।", "उद्योग के नेताओं, शिक्षाविदों, शोधकर्ताओं और छात्रों के साथ नेटवर्क बनाएं।", "मध्य भारत के अग्रणी इंजीनियरिंग संस्थान - SGSITS में ब्रांड दृश्यता प्राप्त करें।", "इंटर्नशिप और भर्ती के लिए प्रतिभाशाली छात्रों के एक पूल तक पहुंच।", "सहयोगी अनुसंधान और परामर्श के अवसरों का अन्वेषण करें।"],
     stallPackages_title: "स्टाल पैकेज",
-    stallPackages: [{ size: "15 फीट x 15 फीट", price: "₹12,000" }, { size: "10 फीट x 15 फीट", price: "₹8,000" }, { size: "10 फीट x 10 फीट", price: "₹6,000" }],
+    stallPackages: [{ size: "10 फीट x 20 फीट", price: "₹10,000" },  { size: "10 फीट x 10 फीट", price: "₹6,000" }],
     registrationLink: "https://forms.gle/hRMavmuyzY7B4GFN7",
     contactEmail: "IndustryExpoAarohan@gmail.com",
     contact_label: "बुकिंग के लिए संपर्क करें:"
