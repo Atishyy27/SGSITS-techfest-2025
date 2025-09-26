@@ -120,9 +120,9 @@ export const galleryImages = [
 
 // export const teamData = {
 //   
-https://www.sgsits.ac.in/images/Departments/me/bhupendra_more-resize.jpg
 
 // };
+
 
 export const teamData = {
   "Organizing Committee": [
