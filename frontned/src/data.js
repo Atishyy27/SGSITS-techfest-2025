@@ -148,13 +148,11 @@ export const teamData = {
   "Prarupam Team": [
     { name: "Prof. Vinod Pare", role: "Team Lead", avatar: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757994544/WhatsApp_Image_2025-09-15_at_21.54.24_95f4e367_cjbopz.jpg" },
     { name: "Prof. Vineet Singh", role: "Co-Team Lead", avatar: "https://media.licdn.com/dms/image/v2/D4D03AQE9bUpCzGYY4A/profile-displayphoto-shrink_800_800/B4DZSuA9fXHYAc-/0/1738086276222?e=1760572800&v=beta&t=o3LObXBQHpe47rz2Nkl0gEnmxKZDcG727_Gx2pbaLK8" },
-    { name: "Prof. R.C. Gurjar", role: "Co-Team Lead", avatar: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=DSL2-UcAAAAJ&citpid=2" },
     { name: "Prof. Manjeet Soni", role: "Member", avatar: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757994541/WhatsApp_Image_2025-09-15_at_21.55.27_eebc963f_wiv8e6.jpg" },
     { name: "Prof. Urmila Raghuvanshi", role: "Member", avatar: "https://media.licdn.com/dms/image/v2/C5603AQGtV_a58I16HA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517366793210?e=1760572800&v=beta&t=tA9Xe2bueqf1ix4TZ-WcWlVdIF0iaSEyGpGTUYd6nYE" },
     { name: "Prof. Ashwin Srivastava", role: "Member", avatar: "https://media.licdn.com/dms/image/v2/C4E03AQFrGCvss213-A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516774077421?e=1760572800&v=beta&t=FNDZX_tnZIiTSWWGG2s3c8NNYp6gpZvKm5hcwlcC7Sg" },
     { name: "Prof. Puneet K. Samaiya", role: "Member", avatar: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=N_pPcj8AAAAJ&citpid=2" },
     { name: "Prof. Avani Jain", role: "Member", avatar: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=s28-sQwAAAAJ&citpid=1" },
-    { name: "Prof. Tarun Kumar Narnaure", role: "Member", avatar: "https://media.licdn.com/dms/image/v2/D4D03AQFtaazmNhHcNg/profile-displayphoto-shrink_800_800/B4DZN3vfFJG0Ac-/0/1732880765338?e=1760572800&v=beta&t=gDIkszRCahmp7a5JEL5pV-9ezEMcDnXTPR0lmMq5aAE" },
     { name: "Prof. Gangaram Mourya", role: "Member", avatar: "https://res.cloudinary.com/df4fnnohe/image/upload/v1757994540/WhatsApp_Image_2025-09-15_at_21.55.59_acc8cc10_ho54ys.jpg" },
     { name: "Prof. Kumar Rohit", role: "Member", avatar: "https://media.licdn.com/dms/image/v2/D5603AQFFI1G7KYuYIg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720508849059?e=1760572800&v=beta&t=v89iwSeWihKVqe69SAntChUvSXlLl48H94YlcJF88UE" },
     { name: "Prof. Adarsh Jaiswal", role: "Member", avatar: "https://media.licdn.com/dms/image/v2/D4D03AQEqAobwLkXlqg/profile-displayphoto-shrink_200_200/B4DZSsNrcSHIAY-/0/1738056056186?e=1760572800&v=beta&t=Ar25dXYL-Q71Q-zOGre3kUeX2mziwNxDLqlxi3r8LQE" },
